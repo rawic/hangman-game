@@ -17,7 +17,7 @@ module.exports = {
         use: {
           loader: "babel-loader",
           options: {
-            presets: ["env"]
+            presets: ["@babel/preset-env"]
           }
         }
       },
@@ -29,7 +29,8 @@ module.exports = {
   },
   devServer: {
     contentBase: path.resolve(__dirname, "public"),
-    publicPath: "/scripts/"
+    publicPath: "/scripts/",
+    port: 9000
   },
   devtool: "source-map"
 };
