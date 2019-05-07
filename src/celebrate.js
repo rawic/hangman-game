@@ -1,7 +1,7 @@
 import celebrate from "./confetti";
 
 const tag = document.createElement("script");
-tag.src = "http://www.youtube.com/player_api";
+tag.src = "//www.youtube.com/player_api";
 const firstScriptTag = document.getElementsByTagName("script")[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
