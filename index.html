@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <title>Hangman - Desktop game</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#002d35" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:400,500"
+      rel="stylesheet"
+    />
+  </head>
+
+  <style>
+    .modal-background {
+      visibility: hidden;
+      opacity: 0;
+    }
+  </style>
+
+  <body>
+    <!--[if IE]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
+
+    <section>
+      <h1>The Hangman <span>Desktop game</span></h1>
+
+      <div class="js-board board">
+        <span>*</span><span>*</span><span>*</span><span>*</span><span>*</span
+        ><span>*</span><span>*</span><span>*</span><span> </span><span>*</span
+        ><span>*</span><span>*</span><span>*</span><span>*</span>
+      </div>
+
+      <p class="js-guesses">Guesses left: 0 😁</p>
+      <button class="button button-reset js-restartGame" type="button">
+        Restart game
+      </button>
+
+      <div class="modal-background">
+        <section class="modal">
+          <h2>Wait for it</h2>
+          <div id="player"></div>
+          <small>
+            ❤️ Based on the
+            <a
+              href="https://codepen.io/rainner/pen/BEOyJq"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Rainner Lins's effect</a
+            >
+          </small>
+        </section>
+      </div>
+
+      <footer>
+        <small
+          ><a href="https://rawic.me" target="_blank" rel="noopener noreferrer"
+            >😉 Rafał Wichowski</a
+          ></small
+        >
+      </footer>
+    </section>
+
+    <script src="/scripts/hangman-bundle.js"></script>
+    <script src="/scripts/celebrate-bundle.js"></script>
+  </body>
+</html>
